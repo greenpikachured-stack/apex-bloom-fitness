@@ -82,6 +82,7 @@ export const Footer = () => {
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Apex Fitness. All rights reserved.</p>
+          <p>Designed By Unique Reach Media</p>
         </div>
       </div>
     </footer>

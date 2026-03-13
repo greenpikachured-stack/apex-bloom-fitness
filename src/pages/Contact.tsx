@@ -5,9 +5,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { sendEmailJsForm } from "@/lib/emailjs";
 
 const ContactPage = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,13 +17,46 @@ const ContactPage = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    const serviceId = import.meta.env.VITE_EMAILJS_CONTACT_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_CONTACT_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      toast({
+        title: "Email config missing",
+        description: "Set Contact form EmailJS keys in environment variables.",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      await sendEmailJsForm(
+        { serviceId, templateId, publicKey },
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+      );
+
+      toast({
+        title: "Message Sent!",
+        description: "We'll get back to you within 24 hours.",
+      });
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch {
+      toast({
+        title: "Sending failed",
+        description: "Please try again in a moment.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -146,8 +181,8 @@ const ContactPage = () => {
                     className="bg-background"
                   />
                 </div>
-                <Button variant="hero" size="lg" type="submit" className="w-full">
-                  Send Message
+                <Button variant="hero" size="lg" type="submit" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </div>
