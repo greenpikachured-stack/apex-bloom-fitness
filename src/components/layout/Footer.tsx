@@ -57,9 +57,16 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-muted-foreground">
-                <MapPin size={18} className="text-primary" />
-                <span>123 Fitness Street, City</span>
+              <li className="flex items-start gap-3 text-muted-foreground">
+                <MapPin size={18} className="text-primary mt-1 flex-shrink-0" />
+                <a
+                  href="https://maps.app.goo.gl/zNQDoyeKGg6wVGMJ6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  HVR, Rd Number 1, Happy Homes Colony, Golden Heights Colony, RAJENDERNAGAR, Hyderabad, Telangana 500048
+                </a>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Phone size={18} className="text-primary" />
@@ -67,7 +74,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={18} className="text-primary" />
-                <span>hello@apexfitness.com</span>
+                <span>apexfithyd@gmail.com</span>
               </li>
             </ul>
           </div>

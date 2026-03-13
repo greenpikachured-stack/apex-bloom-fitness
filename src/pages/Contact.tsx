@@ -58,7 +58,14 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
-                    <p className="text-muted-foreground">123 Fitness Street<br />City, State 12345</p>
+                    <a
+                      href="https://maps.app.goo.gl/zNQDoyeKGg6wVGMJ6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      HVR, Rd Number 1, Happy Homes Colony, Golden Heights Colony, RAJENDERNAGAR, Hyderabad, Telangana 500048
+                    </a>
                   </div>
                 </div>
 
@@ -78,7 +85,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">hello@apexfitness.com</p>
+                    <p className="text-muted-foreground">apexfithyd@gmail.com</p>
                   </div>
                 </div>
 
@@ -89,8 +96,8 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Hours</h3>
                     <p className="text-muted-foreground">
-                      Mon - Fri: 6:00 AM - 9:00 PM<br />
-                      Sat - Sun: 8:00 AM - 6:00 PM
+                      Monday - Saturday: 6:00 AM - 11:00 PM<br />
+                      Sunday: 6:00 AM - 12:00 PM
                     </p>
                   </div>
                 </div>
