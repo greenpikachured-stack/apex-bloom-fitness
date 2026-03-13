@@ -76,7 +76,7 @@ const PricingPage = () => {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative p-8 hover-lift flex flex-col ${
+                className={`relative p-8 hover-lift flex flex-col h-full ${
                   plan.featured
                     ? "bg-primary text-primary-foreground border-2 border-primary"
                     : "bg-card border border-border"

@@ -71,10 +71,7 @@ const ProgramsPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {programs.map((program) => (
-              <div
-                key={program.title}
-                className="bg-card border border-border p-8 hover-lift flex flex-col"
-              >
+              <div key={program.title} className="bg-card border border-border p-8 hover-lift flex flex-col h-full">
                 <div className="w-16 h-16 bg-primary/10 flex items-center justify-center mb-6">
                   <program.icon className="text-primary" size={28} />
                 </div>
