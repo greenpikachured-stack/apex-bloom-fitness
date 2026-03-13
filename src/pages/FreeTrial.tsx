@@ -74,7 +74,7 @@ const FreeTrialPage = () => {
                 <p className="text-muted-foreground italic">
                   "My free trial at Apex changed my life. I knew from day one that this was the place for me. The trainers, the community, everything was exactly what I needed."
                 </p>
-                <p className="mt-4 font-semibold">— Ananya T, Member</p>
+                <p className="mt-4 font-semibold">- Ananya T, Member</p>
               </div>
             </div>
 

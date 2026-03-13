@@ -57,7 +57,7 @@ const AboutPage = () => {
                 Apex Fitness was born from a simple belief: that every woman deserves access to premium fitness facilities and expert guidance in an environment designed specifically for her needs.
               </p>
               <p className="text-muted-foreground mb-6">
-                Founded by fitness professionals with over a decade of experience in women's health and wellness, our studio was created to fill a gap in the fitness industry—a space where women feel seen, supported, and celebrated.
+                Founded by fitness professionals with over a decade of experience in women's health and wellness, our studio was created to fill a gap in the fitness industry - a space where women feel seen, supported, and celebrated.
               </p>
               <p className="text-muted-foreground">
                 Today, Apex Fitness stands as a beacon of empowerment, helping hundreds of women transform their bodies, minds, and lives through personalized training programs and unwavering support.

@@ -21,7 +21,11 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-3xl font-serif font-bold text-gradient">APEX</span>
+            <img
+              src="/ApexLogo.png"
+              alt="Apex"
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
