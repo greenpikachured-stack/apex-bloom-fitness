@@ -5,47 +5,47 @@ import { Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    price: "99",
-    period: "month",
-    description: "Perfect for beginners starting their fitness journey",
+    name: "12 Months",
+    actualPrice: "24,999",
+    discountedPrice: "15,000",
+    period: "12 months",
+    description: "Best value plan for long-term consistency",
     features: [
-      "Access to group classes",
-      "2 classes per week",
+      "Unlimited gym access",
+      "Personalized workout plan",
+      "Nutrition guidance",
+      "Progress tracking",
       "Locker room access",
-      "Fitness assessment",
-      "Community support",
     ],
     featured: false,
   },
   {
-    name: "Premium",
-    price: "179",
-    period: "month",
-    description: "Our most popular plan for dedicated fitness enthusiasts",
+    name: "6 Months",
+    actualPrice: "17,999",
+    discountedPrice: "11,999",
+    period: "6 months",
+    description: "Most popular plan with strong savings",
     features: [
-      "Unlimited group classes",
-      "2 personal training sessions",
+      "Unlimited gym access",
+      "Personalized workout plan",
       "Nutrition guidance",
-      "Body composition analysis",
-      "Priority booking",
-      "Guest passes (2/month)",
+      "Progress tracking",
+      "Locker room access",
     ],
     featured: true,
   },
   {
-    name: "Elite",
-    price: "299",
-    period: "month",
-    description: "The ultimate experience for serious transformation",
+    name: "3 Months",
+    actualPrice: "14,999",
+    discountedPrice: "8,999",
+    period: "3 months",
+    description: "Short-term plan to kickstart your transformation",
     features: [
-      "Everything in Premium",
-      "Weekly personal training",
-      "Custom meal plans",
-      "24/7 trainer support",
-      "Recovery services",
-      "Exclusive workshops",
-      "VIP events access",
+      "Unlimited gym access",
+      "Personalized workout plan",
+      "Nutrition guidance",
+      "Progress tracking",
+      "Locker room access",
     ],
     featured: false,
   },
@@ -92,7 +92,10 @@ const PricingPage = () => {
                   {plan.description}
                 </p>
                 <div className="mb-6">
-                  <span className="text-5xl font-bold">${plan.price}</span>
+                  <div className={plan.featured ? "text-primary-foreground/80 line-through mb-1" : "text-muted-foreground line-through mb-1"}>
+                    Rs {plan.actualPrice}
+                  </div>
+                  <span className="text-5xl font-bold">Rs {plan.discountedPrice}</span>
                   <span className={plan.featured ? "text-primary-foreground/80" : "text-muted-foreground"}>
                     /{plan.period}
                   </span>

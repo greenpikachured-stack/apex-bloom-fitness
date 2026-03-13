@@ -3,19 +3,19 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const testimonials = [
   {
-    name: "Sarah M.",
+    name: "Ananya S.",
     role: "Member since 2022",
     content: "Apex transformed my life. Not just my body, but my entire mindset. The trainers here truly care about your journey.",
     rating: 5,
   },
   {
-    name: "Jennifer L.",
+    name: "Priya R.",
     role: "Member since 2021",
     content: "The supportive community at Apex is incredible. I've made lifelong friends while achieving my fitness goals.",
     rating: 5,
   },
   {
-    name: "Michelle K.",
+    name: "Kavya N.",
     role: "Member since 2023",
     content: "I've tried many gyms, but nothing compares to Apex. The personalized approach makes all the difference.",
     rating: 5,
