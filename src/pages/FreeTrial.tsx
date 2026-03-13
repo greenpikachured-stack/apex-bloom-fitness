@@ -36,7 +36,7 @@ const FreeTrialPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card-gradient">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 mb-6">
@@ -74,7 +74,7 @@ const FreeTrialPage = () => {
                 <p className="text-muted-foreground italic">
                   "My free trial at Apex changed my life. I knew from day one that this was the place for me. The trainers, the community, everything was exactly what I needed."
                 </p>
-                <p className="mt-4 font-semibold">— Rachel T., Member</p>
+                <p className="mt-4 font-semibold">— Ananya T, Member</p>
               </div>
             </div>
 

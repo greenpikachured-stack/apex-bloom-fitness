@@ -30,7 +30,7 @@ const AboutPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card-gradient">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">About Us</p>
@@ -77,7 +77,7 @@ const AboutPage = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card-gradient">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">Our Values</p>

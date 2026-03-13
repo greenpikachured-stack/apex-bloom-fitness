@@ -9,28 +9,28 @@ const programs = [
     title: "Fat Loss Program",
     description: "Burn fat effectively with customized workouts and nutrition guidance. Our metabolic training sessions combine strength and cardio for maximum calorie burn.",
     features: ["Personalized meal plans", "Metabolic conditioning", "Progress tracking", "Weekly check-ins"],
-    duration: "8-12 weeks",
+    duration: "Monthly packages",
   },
   {
     icon: Dumbbell,
     title: "Strength Training",
     description: "Build lean muscle and increase your overall strength. Progressive resistance training designed specifically for the female body.",
     features: ["Proper form coaching", "Progressive overload", "Muscle balance focus", "Strength assessments"],
-    duration: "Ongoing",
+    duration: "Monthly packages",
   },
   {
     icon: Zap,
     title: "HIIT Classes",
     description: "High-intensity interval training that maximizes results in minimal time. Perfect for busy women who want effective workouts.",
     features: ["30-45 min sessions", "Full body workouts", "Scalable intensity", "Community atmosphere"],
-    duration: "Drop-in",
+    duration: "Monthly packages",
   },
   {
     icon: Heart,
     title: "Yoga & Wellness",
     description: "Find balance and inner peace while improving flexibility. Our yoga sessions complement your training and aid recovery.",
     features: ["Stress reduction", "Flexibility improvement", "Mind-body connection", "Meditation guidance"],
-    duration: "Weekly classes",
+    duration: "Monthly packages",
   },
   {
     icon: Users,
@@ -46,13 +46,20 @@ const programs = [
     features: ["Custom programming", "Nutrition coaching", "Accountability", "Flexible scheduling"],
     duration: "Session packages",
   },
+  {
+    icon: Zap,
+    title: "Zumba Classes",
+    description: "Dance-focused cardio sessions that make fitness fun, energetic, and engaging while improving endurance.",
+    features: ["High-energy routines", "Beginner-friendly moves", "Full-body cardio", "Fun group vibe"],
+    duration: "Monthly packages",
+  },
 ];
 
 const ProgramsPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card-gradient">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">Our Programs</p>
@@ -98,7 +105,7 @@ const ProgramsPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card-gradient">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-serif font-bold mb-6">
             Not Sure Which Program Is <span className="text-gradient">Right For You?</span>

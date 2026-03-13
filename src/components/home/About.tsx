@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 export const About = () => {
   return (
     <Reveal variant="home">
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card-gradient">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative stagger-item">
@@ -17,7 +17,7 @@ export const About = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-primary p-8">
-                <p className="text-4xl font-serif font-bold text-primary-foreground">10+</p>
+                <p className="text-4xl font-serif font-bold text-primary-foreground">5+</p>
                 <p className="text-primary-foreground/80 uppercase tracking-widest text-sm">Years Experience</p>
               </div>
             </div>

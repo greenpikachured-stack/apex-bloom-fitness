@@ -136,6 +136,22 @@
     background-image: var(--dark-gradient);
   }
 
+  .bg-card-gradient {
+    background-color: hsl(var(--card));
+    background-image:
+      radial-gradient(900px 420px at 8% -20%, hsl(0 0% 100% / 0.11), transparent 58%),
+      radial-gradient(720px 340px at 88% 120%, hsl(0 0% 100% / 0.06), transparent 56%),
+      linear-gradient(140deg, hsl(0 0% 22%) 0%, hsl(0 0% 14%) 34%, hsl(0 0% 10%) 66%, hsl(0 0% 16%) 100%),
+      repeating-linear-gradient(
+        -62deg,
+        hsl(0 0% 100% / 0.04) 0px,
+        hsl(0 0% 100% / 0.04) 1px,
+        transparent 1px,
+        transparent 12px
+      );
+    background-blend-mode: screen, soft-light, normal, overlay;
+  }
+
   .bg-overlay-gradient {
     background-image: var(--overlay-gradient);
   }
