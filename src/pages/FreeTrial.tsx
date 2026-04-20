@@ -49,7 +49,7 @@ const FreeTrialPage = () => {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          goals: formData.goals,
+          goals: formData.goals || "No goals specified",
         },
       );
 

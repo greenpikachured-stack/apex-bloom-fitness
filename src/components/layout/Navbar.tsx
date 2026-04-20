@@ -16,7 +16,7 @@ export const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-black/10 bg-[linear-gradient(180deg,rgba(178,182,193,0.92)_0%,rgba(166,171,183,0.90)_55%,rgba(154,160,173,0.92)_100%)] backdrop-blur-xl shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-black/10 bg-[rgba(255,255,255,0.82)] backdrop-blur-xl shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between min-h-[88px]">
           <Link to="/" className="flex items-center shrink-0">
@@ -37,13 +37,13 @@ export const Navbar = () => {
                   to={link.path}
                   className={`relative text-sm font-medium uppercase tracking-[0.18em] transition-all duration-300 ${
                     isActive
-                      ? "text-[#C73F78]"
+                      ? "text-[#e91168]"
                       : "text-slate-800/90 hover:text-slate-950"
                   }`}
                 >
                   {link.name}
                   <span
-                    className={`absolute left-1/2 top-[calc(100%+8px)] h-[1.5px] -translate-x-1/2 bg-[#C73F78] transition-all duration-300 ${
+                    className={`absolute left-1/2 top-[calc(100%+8px)] h-[1.5px] -translate-x-1/2 bg-[#e91168] transition-all duration-300 ${
                       isActive ? "w-7 opacity-100" : "w-0 opacity-0"
                     }`}
                   />
@@ -55,7 +55,7 @@ export const Navbar = () => {
           <div className="hidden md:block">
             <Button
               size="lg"
-              className="h-11 rounded-md border border-[#B73569]/35 bg-[#C73F78] px-8 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_24px_rgba(199,63,120,0.28)] transition-all duration-300 hover:bg-[#B73569] hover:shadow-[0_12px_28px_rgba(183,53,105,0.32)]"
+              className="h-11 rounded-md border border-[#c90f5a]/35 bg-[#e91168] px-8 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_24px_rgba(233,17,104,0.28)] transition-all duration-300 hover:bg-[#c90f5a] hover:shadow-[0_12px_28px_rgba(201,15,90,0.32)]"
               asChild
             >
               <Link to="/free-trial">Free Trial</Link>
@@ -80,7 +80,7 @@ export const Navbar = () => {
                     to={link.path}
                     className={`text-sm font-medium uppercase tracking-[0.16em] transition-colors duration-300 ${
                       location.pathname === link.path
-                        ? "text-[#C73F78]"
+                        ? "text-[#e91168]"
                         : "text-slate-800/90 hover:text-slate-950"
                     }`}
                     onClick={() => setIsOpen(false)}
@@ -91,7 +91,7 @@ export const Navbar = () => {
 
                 <Button
                   size="lg"
-                  className="mt-3 h-11 rounded-md border border-[#B73569]/35 bg-[#C73F78] px-8 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_24px_rgba(199,63,120,0.28)] transition-all duration-300 hover:bg-[#B73569]"
+                  className="mt-3 h-11 rounded-md border border-[#c90f5a]/35 bg-[#e91168] px-8 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_24px_rgba(233,17,104,0.28)] transition-all duration-300 hover:bg-[#c90f5a]"
                   asChild
                 >
                   <Link to="/free-trial" onClick={() => setIsOpen(false)}>

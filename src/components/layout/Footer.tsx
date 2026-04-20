@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -8,19 +8,22 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="text-3xl font-serif font-bold text-gradient mb-4">APEX</h3>
+            <img
+              src="/ApexLogo.png"
+              alt="Apex"
+              className="h-14 w-auto object-contain mb-4"
+            />
             <p className="text-muted-foreground mb-6">
               Empowering women through fitness. Transform your body, elevate your mind, and embrace your strength.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="https://www.instagram.com/apexfithyd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Youtube size={20} />
               </a>
             </div>
           </div>
@@ -70,7 +73,9 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Phone size={18} className="text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <a href="tel:+916301499339" className="hover:text-primary transition-colors">
+                  +91 6301 499 339
+                </a>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={18} className="text-primary" />
@@ -81,7 +86,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Apex Fitness. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Apex Fit. All rights reserved.</p>
           <p>Designed By Unique Reach Media</p>
         </div>
       </div>

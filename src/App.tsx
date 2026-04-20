@@ -11,6 +11,7 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import FreeTrial from "./pages/FreeTrial";
 import NotFound from "./pages/NotFound";
+import { WhatsAppButton } from "./components/layout/WhatsAppButton";
 
 const queryClient = new QueryClient();
 const getScrollKey = (path: string) => `apex-scroll:${path}`;
@@ -129,6 +130,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollPositionPersistence />
         <AnimatedRoutes />
+        <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

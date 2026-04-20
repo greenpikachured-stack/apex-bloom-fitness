@@ -7,7 +7,7 @@ const plans = [
   {
     name: "12 Months",
     actualPrice: "24,999",
-    discountedPrice: "15,000",
+    discountedPrice: "14,999",
     period: "12 months",
     description: "Best value plan for long-term consistency",
     features: [

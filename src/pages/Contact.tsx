@@ -110,7 +110,9 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <a href="tel:+916301499339" className="text-muted-foreground hover:text-primary transition-colors">
+                      +91 6301 499 339
+                    </a>
                   </div>
                 </div>
 
@@ -186,6 +188,25 @@ const ContactPage = () => {
                 </Button>
               </form>
             </div>
+          </div>
+
+          <div className="mt-14">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold mb-5">
+              Find Us on <span className="text-gradient">Map</span>
+            </h2>
+            <a
+              href="https://maps.app.goo.gl/zNQDoyeKGg6wVGMJ6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block overflow-hidden border border-border bg-card"
+              aria-label="Open Apex Bloom Fitness location in Google Maps"
+            >
+              <img
+                src="/map.png"
+                alt="Apex Bloom Fitness location map"
+                className="w-full h-[260px] md:h-[340px] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+              />
+            </a>
           </div>
         </div>
       </section>

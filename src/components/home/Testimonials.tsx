@@ -3,21 +3,21 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const testimonials = [
   {
-    name: "Ananya S.",
-    role: "Member since 2022",
-    content: "Apex transformed my life. Not just my body, but my entire mindset. The trainers here truly care about your journey.",
+    name: "Ananya S",
+    content:
+      "Before joining Apex, I used to just do random workouts. Here, the trainers properly guided me on form, sets, and diet. I’ve reduced body fat and gained strength without any injuries.",
     rating: 5,
   },
   {
-    name: "Priya R.",
-    role: "Member since 2021",
-    content: "The supportive community at Apex is incredible. I've made lifelong friends while achieving my fitness goals.",
+    name: "Priya R",
+    content:
+      "The gym atmosphere at Apex is very motivating. Trainers keep checking your form and push you to complete your sets. It doesn’t feel like a timepass gym - people here are serious about fitness.",
     rating: 5,
   },
   {
-    name: "Kavya N.",
-    role: "Member since 2023",
-    content: "I've tried many gyms, but nothing compares to Apex. The personalized approach makes all the difference.",
+    name: "Kavya N",
+    content:
+      "I joined Apex to get back in shape after a long break. The trainers kept it simple and helped me stay consistent. Now working out has become part of my routine.",
     rating: 5,
   },
 ];
@@ -45,7 +45,6 @@ export const Testimonials = () => {
                 <p className="text-lg mb-6 italic">"{testimonial.content}"</p>
                 <div>
                   <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
               </div>
             ))}

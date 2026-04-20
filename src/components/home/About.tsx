@@ -16,10 +16,10 @@ export const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-primary p-8">
+              {/*<div className="absolute -bottom-6 -right-6 bg-primary p-8">
                 <p className="text-4xl font-serif font-bold text-primary-foreground">5+</p>
                 <p className="text-primary-foreground/80 uppercase tracking-widest text-sm">Years Experience</p>
-              </div>
+              </div>*/}
             </div>
 
             <div className="stagger-item space-y-6">
