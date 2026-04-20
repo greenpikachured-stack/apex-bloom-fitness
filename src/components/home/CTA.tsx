@@ -53,7 +53,7 @@ export const CTA = () => {
             Ready to Start Your <span className="text-gradient">Transformation?</span>
           </h2>
           <p className="stagger-item text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join hundreds of women who have already transformed their lives at Apex Fitness. Your journey begins with a single step.
+            Join hundreds of women who have already transformed their lives at ApexFit. Your journey begins with a single step.
           </p>
           <div className="stagger-item">
             <Button variant="hero" size="xl" asChild>

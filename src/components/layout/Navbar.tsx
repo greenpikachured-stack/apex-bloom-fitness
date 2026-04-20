@@ -22,7 +22,7 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center shrink-0">
             <img
               src="/ApexLogo.png"
-              alt="Apex"
+              alt="ApexFit"
               className="h-14 w-auto object-contain md:h-16 lg:h-[4.4rem]"
             />
           </Link>

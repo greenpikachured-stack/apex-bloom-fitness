@@ -38,7 +38,7 @@ const AboutPage = () => {
               Empowering Women Through <span className="text-gradient">Fitness</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              At Apex Fitness, we believe every woman deserves to feel strong, confident, and empowered.
+              At ApexFit, we believe every woman deserves to feel strong, confident, and empowered.
             </p>
           </div>
         </div>
@@ -54,13 +54,13 @@ const AboutPage = () => {
                 A Space Where Women <span className="text-gradient">Thrive</span>
               </h2>
               <p className="text-muted-foreground mb-6">
-                Apex Fitness was born from a simple belief: that every woman deserves access to premium fitness facilities and expert guidance in an environment designed specifically for her needs.
+                ApexFit was born from a simple belief: that every woman deserves access to premium fitness facilities and expert guidance in an environment designed specifically for her needs.
               </p>
               <p className="text-muted-foreground mb-6">
                 Founded by fitness professionals with over a decade of experience in women's health and wellness, our studio was created to fill a gap in the fitness industry - a space where women feel seen, supported, and celebrated.
               </p>
               <p className="text-muted-foreground">
-                Today, Apex Fitness stands as a beacon of empowerment, helping hundreds of women transform their bodies, minds, and lives through personalized training programs and unwavering support.
+                Today, ApexFit stands as a beacon of empowerment, helping hundreds of women transform their bodies, minds, and lives through personalized training programs and unwavering support.
               </p>
             </div>
             <div className="relative">

@@ -199,11 +199,11 @@ const ContactPage = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="group block overflow-hidden border border-border bg-card"
-              aria-label="Open Apex Bloom Fitness location in Google Maps"
+              aria-label="Open ApexFit location in Google Maps"
             >
               <img
                 src="/map.png"
-                alt="Apex Bloom Fitness location map"
+                alt="ApexFit location map"
                 className="w-full h-[260px] md:h-[340px] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
               />
             </a>

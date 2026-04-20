@@ -20,7 +20,7 @@ export const TrialPass = () => {
               Experience the Transformation
             </h3>
             <p className="stagger-item text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Curious about what Apex Fitness has to offer? Apply for a free trial pass and experience our supportive community, expert-led classes, and personalized coaching.
+              Curious about what ApexFit has to offer? Apply for a free trial pass and experience our supportive community, expert-led classes, and personalized coaching.
             </p>
             <div className="stagger-item">
               <Button variant="hero" size="xl" asChild>

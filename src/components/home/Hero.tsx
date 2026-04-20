@@ -52,7 +52,7 @@ export const Hero = () => {
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
             <p className="stagger-item text-primary uppercase tracking-[0.3em] text-sm mb-4">
-              Welcome to Apex Fitness
+              Welcome to ApexFit
             </p>
             <h1 className="stagger-item text-5xl md:text-7xl font-serif font-bold mb-6 leading-[1.15] pb-2 overflow-visible">
               Unleash Your

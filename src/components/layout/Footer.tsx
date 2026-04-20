@@ -10,7 +10,7 @@ export const Footer = () => {
           <div>
             <img
               src="/ApexLogo.png"
-              alt="Apex"
+              alt="ApexFit"
               className="h-14 w-auto object-contain mb-4"
             />
             <p className="text-muted-foreground mb-6">
@@ -86,7 +86,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Apex Fit. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ApexFit. All rights reserved.</p>
           <p>Designed By Unique Reach Media</p>
         </div>
       </div>

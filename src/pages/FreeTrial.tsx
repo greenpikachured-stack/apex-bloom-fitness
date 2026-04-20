@@ -82,7 +82,7 @@ const FreeTrialPage = () => {
               Start Your <span className="text-gradient">Free Trial</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Experience everything Apex Fitness has to offer with absolutely no commitment. Your transformation starts here.
+              Experience everything ApexFit has to offer with absolutely no commitment. Your transformation starts here.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ const FreeTrialPage = () => {
               </ul>
               <div className="bg-card border border-border p-6">
                 <p className="text-muted-foreground italic">
-                  "My free trial at Apex changed my life. I knew from day one that this was the place for me. The trainers, the community, everything was exactly what I needed."
+                  "Before joining ApexFit, I used to just do random workouts. Here, the trainers properly guided me on form, sets, and diet. I’ve reduced body fat and gained strength without any injuries."
                 </p>
                 <p className="mt-4 font-semibold">- Ananya T, Member</p>
               </div>
@@ -161,7 +161,7 @@ const FreeTrialPage = () => {
                   {isSubmitting ? "Submitting..." : "Claim Your Free Trial"}
                 </Button>
                 <p className="text-sm text-muted-foreground text-center">
-                  By submitting, you agree to receive communications from Apex Fitness.
+                  By submitting, you agree to receive communications from ApexFit.
                 </p>
               </form>
             </div>

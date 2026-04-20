@@ -5,19 +5,19 @@ const testimonials = [
   {
     name: "Ananya S",
     content:
-      "Before joining Apex, I used to just do random workouts. Here, the trainers properly guided me on form, sets, and diet. I’ve reduced body fat and gained strength without any injuries.",
+      "Before joining ApexFit, I used to just do random workouts. Here, the trainers properly guided me on form, sets, and diet. I’ve reduced body fat and gained strength without any injuries.",
     rating: 5,
   },
   {
     name: "Priya R",
     content:
-      "The gym atmosphere at Apex is very motivating. Trainers keep checking your form and push you to complete your sets. It doesn’t feel like a timepass gym - people here are serious about fitness.",
+      "The gym atmosphere at ApexFit is very motivating. Trainers keep checking your form and push you to complete your sets. It doesn’t feel like a timepass gym - people here are serious about fitness.",
     rating: 5,
   },
   {
     name: "Kavya N",
     content:
-      "I joined Apex to get back in shape after a long break. The trainers kept it simple and helped me stay consistent. Now working out has become part of my routine.",
+      "I joined ApexFit to get back in shape after a long break. The trainers kept it simple and helped me stay consistent. Now working out has become part of my routine.",
     rating: 5,
   },
 ];

@@ -24,13 +24,13 @@ export const About = () => {
 
             <div className="stagger-item space-y-6">
               <div>
-                <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">About Apex</p>
+                <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">About ApexFit</p>
                 <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
                   Your Journey To <span className="text-gradient">Transformation</span>
                 </h2>
               </div>
               <p className="text-muted-foreground">
-                At Apex Fitness, we believe that fitness is more than just physical - it's a lifestyle, a mindset, and a journey of self-empowerment.
+                At ApexFit, we believe that fitness is more than just physical - it's a lifestyle, a mindset, and a journey of self-empowerment.
               </p>
               <p className="text-muted-foreground">
                 Founded with a mission to create a space where women feel seen, supported, and celebrated. Every woman's body and story is unique, and our programs reflect that - blending expert knowledge with compassionate coaching and community support.
