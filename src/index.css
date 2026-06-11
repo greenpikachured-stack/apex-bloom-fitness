@@ -96,11 +96,13 @@
 
   html {
     scroll-behavior: auto;
+    overflow-x: clip;
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     position: relative;
+    overflow-x: clip;
   }
 
   body::before {

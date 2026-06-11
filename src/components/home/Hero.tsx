@@ -36,7 +36,7 @@ export const Hero = () => {
 
   return (
     <Reveal variant="home">
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[calc(100dvh-5rem)] items-center justify-center overflow-hidden md:min-h-screen">
         {/* Background Image */}
         <div
           ref={bgRef}
@@ -49,28 +49,38 @@ export const Hero = () => {
         </div>
 
         {/* Content */}
-        <div className="relative container mx-auto px-4 py-20">
+        <div className="relative container mx-auto px-5 py-14 sm:px-6 sm:py-20">
           <div className="max-w-3xl">
-            <p className="stagger-item text-primary uppercase tracking-[0.3em] text-sm mb-4">
+            <p className="stagger-item mb-4 text-xs uppercase tracking-[0.22em] text-primary sm:text-sm sm:tracking-[0.3em]">
               Welcome to ApexFit
             </p>
-            <h1 className="stagger-item text-5xl md:text-7xl font-serif font-bold mb-6 leading-[1.15] pb-2 overflow-visible">
+            <h1 className="stagger-item mb-5 overflow-visible pb-1 font-serif text-4xl font-bold leading-[1.05] sm:mb-6 sm:pb-2 sm:text-6xl md:text-7xl md:leading-[1.15]">
               Unleash Your
-              <span className="text-gradient block leading-[1.1] pb-1 overflow-visible">
+              <span className="text-gradient block overflow-visible pb-1 leading-[1.02] sm:leading-[1.1]">
                 Inner Strength
               </span>
             </h1>
-            <p className="stagger-item text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
+            <p className="stagger-item mb-7 max-w-xl text-base leading-relaxed text-muted-foreground sm:mb-8 sm:text-lg md:text-xl">
               An exclusive, premium fitness studio designed for women who are ready to transform their bodies, minds, and lives.
             </p>
-            <div className="stagger-item flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" asChild>
+            <div className="stagger-item flex flex-col gap-3.5 sm:flex-row sm:gap-4">
+              <Button
+                variant="hero"
+                size="xl"
+                className="h-12 w-full px-5 text-sm tracking-[0.14em] sm:h-14 sm:w-auto sm:px-10 sm:text-base sm:tracking-widest"
+                asChild
+              >
                 <Link to="/free-trial">
                   Start Your Journey
                   <ArrowRight size={20} />
                 </Link>
               </Button>
-              <Button variant="heroOutline" size="xl" asChild>
+              <Button
+                variant="heroOutline"
+                size="xl"
+                className="h-12 w-full px-5 text-sm tracking-[0.14em] sm:h-14 sm:w-auto sm:px-10 sm:text-base sm:tracking-widest"
+                asChild
+              >
                 <Link to="/programs">
                   Explore Programs
                 </Link>
