@@ -1,54 +1,44 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Check } from "lucide-react";
+import { Star } from "lucide-react";
 
 const plans = [
   {
-    name: "12 Months",
-    actualPrice: "24,999",
-    discountedPrice: "14,999",
-    period: "12 months",
-    description: "Best value plan for long-term consistency",
-    features: [
-      "Unlimited gym access",
-      "Personalized workout plan",
-      "Nutrition guidance",
-      "Progress tracking",
-      "Locker room access",
-    ],
+    name: "One Day",
+    discountedPrice: "499",
     featured: false,
   },
   {
-    name: "6 Months",
-    actualPrice: "17,999",
-    discountedPrice: "11,999",
-    period: "6 months",
-    description: "Most popular plan with strong savings",
-    features: [
-      "Unlimited gym access",
-      "Personalized workout plan",
-      "Nutrition guidance",
-      "Progress tracking",
-      "Locker room access",
-    ],
+    name: "1 Month",
+    discountedPrice: "5,000",
+    featured: false,
+  },
+  {
+    name: "12 Months",
+    actualPrice: "30,000",
+    discountedPrice: "20,000",
     featured: true,
   },
   {
-    name: "3 Months",
-    actualPrice: "14,999",
-    discountedPrice: "8,999",
-    period: "3 months",
-    description: "Short-term plan to kickstart your transformation",
-    features: [
-      "Unlimited gym access",
-      "Personalized workout plan",
-      "Nutrition guidance",
-      "Progress tracking",
-      "Locker room access",
-    ],
+    name: "6 Months",
+    actualPrice: "22,000",
+    discountedPrice: "16,000",
     featured: false,
   },
+  {
+    name: "3 Months",
+    actualPrice: "15,000",
+    discountedPrice: "12,000",
+    featured: false,
+  },
+];
+
+const membershipBenefits = [
+  "Access to gym equipment",
+  "Yoga & Zumba fitness classes",
+  "General trainer supervision",
+  "Steam and shower",
 ];
 
 const PricingPage = () => {
@@ -70,53 +60,81 @@ const PricingPage = () => {
       </section>
 
       {/* Pricing Cards */}
-      <section className="py-20">
+      <section className="relative isolate overflow-hidden py-20 md:py-28">
+        <div
+          className="absolute inset-0 -z-20 scale-105 bg-cover bg-center blur-[2px]"
+          style={{ backgroundImage: "url('/cta-bg.jpg')" }}
+        />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(5,8,18,0.96)_0%,rgba(8,13,27,0.86)_48%,rgba(5,8,18,0.94)_100%)]" />
+
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="mb-14 md:mb-20">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.32em] text-primary">
+              Choose Your Plan
+            </p>
+            <h2 className="font-sans text-4xl font-bold uppercase tracking-tight text-white md:text-6xl">
+              Membership Options
+            </h2>
+          </div>
+
+          <div className="mx-auto grid max-w-[1500px] grid-cols-1 items-end gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-5">
             {plans.map((plan) => (
-              <div
+              <Link
                 key={plan.name}
-                className={`relative p-8 hover-lift flex flex-col h-full ${
+                to="/free-trial"
+                aria-label={`Choose the ${plan.name} membership`}
+                className={`group relative flex min-h-[460px] flex-col overflow-hidden rounded-sm shadow-[0_18px_45px_rgba(0,0,0,0.35)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_55px_rgba(0,0,0,0.48)] ${
                   plan.featured
-                    ? "bg-primary text-primary-foreground border-2 border-primary"
-                    : "bg-card border border-border"
+                    ? "bg-[#ed0a68] xl:min-h-[525px]"
+                    : "bg-[#1b2e59]/95"
                 }`}
               >
-                {plan.featured && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-background text-foreground px-4 py-1 text-sm uppercase tracking-widest">
-                    Most Popular
+                <div
+                  className={`relative flex min-h-24 items-center justify-center px-4 py-6 text-center ${
+                    plan.featured ? "bg-white text-[#172850]" : "bg-[#ed0a68] text-white"
+                  }`}
+                >
+                  {plan.featured && (
+                    <div className="absolute right-4 top-0 flex h-9 w-7 items-center justify-center bg-primary text-white">
+                      <Star size={14} fill="currentColor" />
+                      <span className="absolute -bottom-2 h-0 w-0 border-l-[14px] border-r-[14px] border-t-[8px] border-l-transparent border-r-transparent border-t-primary" />
+                    </div>
+                  )}
+                  <h3 className="font-sans text-2xl font-bold uppercase tracking-wide sm:text-3xl xl:text-[1.7rem]">
+                    {plan.name}
+                  </h3>
+                </div>
+
+                <div className="flex flex-1 flex-col px-6 py-10 text-center text-white">
+                  <div className="flex min-h-28 flex-col items-center justify-center">
+                    {plan.actualPrice && (
+                      <span className="relative mb-2 inline-block text-2xl font-medium text-white/90">
+                        ₹{plan.actualPrice}
+                        <span className="absolute left-[-8%] top-1/2 h-[3px] w-[116%] -rotate-12 bg-red-500" />
+                      </span>
+                    )}
+                    <p className="font-sans text-5xl font-medium leading-none tracking-tight sm:text-6xl xl:text-[3.25rem]">
+                      ₹{plan.discountedPrice}
+                    </p>
                   </div>
-                )}
-                <h3 className="text-2xl font-serif font-semibold mb-2">{plan.name}</h3>
-                <p className={`text-sm mb-6 ${plan.featured ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
-                  {plan.description}
-                </p>
-                <div className="mb-6">
-                  <div className={plan.featured ? "text-primary-foreground/80 line-through mb-1" : "text-muted-foreground line-through mb-1"}>
-                    Rs {plan.actualPrice}
-                  </div>
-                  <span className="text-5xl font-bold">Rs {plan.discountedPrice}</span>
-                  <span className={plan.featured ? "text-primary-foreground/80" : "text-muted-foreground"}>
-                    /{plan.period}
+
+                  <div className="my-8 h-px w-full bg-white/65" />
+
+                  <ul className="space-y-2 text-base leading-6 text-white/95">
+                    {membershipBenefits.map((benefit) => (
+                      <li key={benefit}>{benefit}</li>
+                    ))}
+                  </ul>
+
+                  <span
+                    className={`mt-auto pt-8 text-xs font-semibold uppercase tracking-[0.2em] transition-transform duration-300 group-hover:translate-x-1 ${
+                      plan.featured ? "text-white" : "text-primary"
+                    }`}
+                  >
+                    Choose plan →
                   </span>
                 </div>
-                <ul className="space-y-3 mb-8 flex-grow">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3">
-                      <Check size={18} className={plan.featured ? "text-primary-foreground" : "text-primary"} />
-                      <span className={`text-sm ${plan.featured ? "" : "text-muted-foreground"}`}>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button
-                  variant={plan.featured ? "secondary" : "hero"}
-                  size="lg"
-                  className="w-full"
-                  asChild
-                >
-                  <Link to="/free-trial">Get Started</Link>
-                </Button>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
